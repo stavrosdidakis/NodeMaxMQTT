@@ -1,8 +1,8 @@
-# Max + Node.js + SocketIO + MQTT
+# Max + Node.js + Socket.IO + MQTT
 
 ## 1_NodeToMax-MaxToNode
 
-In this example, we develop a communication system between [Node.js](https://nodejs.org/en/) and [Max](https://cycling74.com/products/max).
+In this example, we develop a communication system between [Node.js](https://nodejs.org/en/) and [Max](https://cycling74.com/products/max) using [sockets](https://socket.io/).
 
 To run this project, start the NodeJS server:
 
@@ -18,7 +18,7 @@ In Max, we open the file **socketio-client.maxpat**. From here, we need to execu
 
 - **script npm install**
 - **script npm start**
-- and click to “**connect http://localhost:5001**”.
+- and click to **“connect http://localhost:5001”**.
 
 If successful, we will be able to see the random numbers coming out of the **route** objects. Finally, we can send a message from Max to Node by controlling the number connected to the **messageFromMax $1**.
 
@@ -26,9 +26,9 @@ If successful, we will be able to see the random numbers coming out of the **rou
 
 ## 2_NodeMaxMQTT
 
-This example extends the previous one by adding MQTT functionality to the Node.js server.
+This example extends the previous one by adding [MQTT](https://www.npmjs.com/package/mqtt) functionality to the Node.js server.
 
-Follow the same install instructions as in the previous example. To use your own MQTT server, you need to add your MQTT broker URL (in this case HiveMQ is used), together with your username and password. If set correctly, you will be able to receive in Max messages from an MQTT broker (on a chosen topic), and also to send data from Max to an MQTT broker as well.
+Follow the same install instructions as in the previous example. To use your own MQTT server, you need to add your MQTT broker URL (in this case [HiveMQ](https://www.hivemq.com/) is used), together with your username and password. If set correctly, you will be able to receive in Max messages from an MQTT broker (on a chosen topic), and also to send data from Max to an MQTT broker as well.
 
 ```jsx
 //MQTT settings
